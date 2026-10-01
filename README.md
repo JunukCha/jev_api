@@ -4,7 +4,14 @@ Python examples for [TypeSafe's Jev](https://console.typesafe.ai) — a decision
 
 ## Setup (Windows)
 
-**1. Clone and create a virtual environment**
+**1. Clone the repository**
+
+```cmd
+git clone https://github.com/JunukCha/jev_api.git
+cd jev_api
+```
+
+**2. Create a virtual environment**
 
 ```cmd
 python -m venv .venv
@@ -12,12 +19,43 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-**2. Set your API key**
+**3. Set your API key**
 
 Copy `.env.example` to `.env.local` and fill in your key:
 
 ```cmd
 copy .env.example .env.local
+```
+
+```env
+TYPESAFE_API_KEY=apikey_your_key_here
+```
+
+Get a key at [console.typesafe.ai](https://console.typesafe.ai) → API Keys.
+
+---
+
+## Setup (Linux / macOS)
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/JunukCha/jev_api.git
+cd jev_api
+```
+
+**2. Create a virtual environment**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+**3. Set your API key**
+
+```bash
+cp .env.example .env.local
 ```
 
 ```env
