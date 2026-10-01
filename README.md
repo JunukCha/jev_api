@@ -2,7 +2,7 @@
 
 Python examples for [TypeSafe's Jev](https://console.typesafe.ai) — a decision model that returns typed answers (yes/no, choice, or score) from natural language input.
 
-## Setup
+## Setup (Windows)
 
 **1. Clone and create a virtual environment**
 
