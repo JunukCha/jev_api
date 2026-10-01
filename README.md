@@ -52,12 +52,12 @@ Each example prints answers and per-call token usage, followed by a total:
 
 ```
 === noul example ===
-  is_refund_request: 0.97
-  is_urgent: 0.85
-  tokens: input=42, output=8
+  is_refund_request: {'type': 'noul', 'noul': 0.99}
+  is_urgent: {'type': 'noul', 'noul': 0.93}
+  tokens: input=294, output=42
 
 === total token usage ===
-  input:  42
-  output: 8
-  total:  50
+  input:  294
+  output: 42
+  total:  336
 ```
