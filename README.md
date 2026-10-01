@@ -2,67 +2,48 @@
 
 Python examples for [TypeSafe's Jev](https://console.typesafe.ai) — a decision model that returns typed answers (yes/no, choice, or score) from natural language input.
 
-## Setup (Windows)
+## Setup
 
 **1. Clone the repository**
 
-```cmd
+```bash
 git clone https://github.com/JunukCha/jev_api.git
 cd jev_api
 ```
 
-**2. Create a virtual environment**
+**2. Create and activate a virtual environment**
 
-```cmd
+```bash
 python -m venv .venv
+
+# Windows
 .venv\Scripts\activate.bat
+
+# Linux / macOS
+# source .venv/bin/activate
+
 pip install -r requirements.txt
 ```
 
 **3. Set your API key**
 
-Copy `.env.example` to `.env.local` and fill in your key:
+Copy `.env.example` to `.env.local`:
 
-```cmd
+```bash
+# Windows
 copy .env.example .env.local
+
+# Linux / macOS
+# cp .env.example .env.local
 ```
+
+Then add your API key to `.env.local`:
 
 ```env
 TYPESAFE_API_KEY=apikey_your_key_here
 ```
 
-Get a key at [console.typesafe.ai](https://console.typesafe.ai) → API Keys.
-
----
-
-## Setup (Linux / macOS)
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/JunukCha/jev_api.git
-cd jev_api
-```
-
-**2. Create a virtual environment**
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-**3. Set your API key**
-
-```bash
-cp .env.example .env.local
-```
-
-```env
-TYPESAFE_API_KEY=apikey_your_key_here
-```
-
-Get a key at [console.typesafe.ai](https://console.typesafe.ai) → API Keys.
+Get a key at [console.typesafe.ai](https://console.typesafe.ai) → **API Keys**.
 
 ## Examples
 
