@@ -1,0 +1,53 @@
+[
+  {
+    "number": 18,
+    "state": "Dear Community Members,\n\nWe are pleased to announce that the local library will extend its weekend opening hours beginning next month. This change has been made in response to numerous requests from residents who need more flexible access to study spaces and library resources. The library will now remain open until 8 p.m. on Saturdays and Sundays. We hope this adjustment will make it easier for students, workers, and families to make use of our facilities. We appreciate your continued support and look forward to welcoming you during the new hours.",
+    "questions": {
+      "answer": {
+        "type": "choice",
+        "instructions": "다음 글의 목적으로 가장 적절한 것은?",
+        "criteria": {
+          "1": "도서관 시설 공사에 대한 양해를 구하려고",
+          "2": "도서관 주말 운영 시간 연장을 알리려고",
+          "3": "새로운 도서 대출 규정을 설명하려고",
+          "4": "지역 주민의 자원봉사 참여를 요청하려고",
+          "5": "도서관 이용 만족도 조사를 실시하려고"
+        }
+      }
+    }
+  },
+  {
+    "number": 23,
+    "state": "People often assume that having more choices gives them greater freedom and satisfaction. However, an excessive number of options can make decision-making more difficult. When consumers are faced with dozens of similar products, they may spend more time comparing minor differences and become less confident about their final decision. In some cases, they may even avoid making a choice altogether. Thus, while choice is generally valuable, increasing the number of available options does not always improve the experience of choosing.",
+    "questions": {
+      "answer": {
+        "type": "choice",
+        "instructions": "다음 글의 주제로 가장 적절한 것은?",
+        "criteria": {
+          "1": "the importance of offering consumers unlimited choices",
+          "2": "the relationship between product quality and customer loyalty",
+          "3": "the negative effects of excessive choice on decision-making",
+          "4": "the advantages of comparing products before purchasing",
+          "5": "the role of advertising in shaping consumer preferences"
+        }
+      }
+    }
+  },
+  {
+    "number": 31,
+    "state": "Scientific progress often depends not only on discovering new facts but also on questioning ideas that have long been accepted. Established theories provide useful frameworks for understanding the world, yet they can also limit the way researchers interpret unexpected evidence. A scientist who treats an existing theory as unquestionable may ignore observations that do not fit it. By contrast, researchers who remain willing to revise their assumptions are more likely to recognize patterns that others overlook. In this sense, intellectual flexibility is not a weakness in scientific thinking but rather a necessary condition for __________.",
+    "questions": {
+      "answer": {
+        "type": "choice",
+        "instructions": "다음 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.",
+        "criteria": {
+          "1": "preserving traditional explanations",
+          "2": "reducing disagreement among researchers",
+          "3": "avoiding unexpected experimental results",
+          "4": "achieving meaningful scientific advancement",
+          "5": "simplifying complex scientific theories"
+        }
+      }
+    }
+  }
+]

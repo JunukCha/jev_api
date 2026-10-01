@@ -49,12 +49,18 @@ Get a key at [console.typesafe.ai](https://console.typesafe.ai) → **API Keys**
 
 | File | Description |
 |------|-------------|
-| `jev_example1.py` | All three question types: `noul`, `choice`, `score` |
-| `jev_example2.py` | `noul` with urgency detection |
+| `jev_basic.py` | All three question types: `noul`, `choice`, `score` |
+| `jev_context_sensitivity.py` | How adding a word ("very quickly") changes `noul` output |
+| `jev_korean.py` | Korean instructions/criteria, and mixing Korean with English |
+| `jev_solve.py` | Solve English reading comprehension questions from `sample_problem.json` |
+| `jev_compare.py` | Compare `sample_jev_answer.json` against `sample_answer.json` and print a score |
 
 ```cmd
-python jev_example1.py
-python jev_example2.py
+python jev_basic.py
+python jev_context_sensitivity.py
+python jev_korean.py
+python jev_solve.py      # saves results to sample_jev_answer.json
+python jev_compare.py    # requires sample_jev_answer.json
 ```
 
 ## Question types
@@ -62,21 +68,18 @@ python jev_example2.py
 | Type | Description | Returns |
 |------|-------------|---------|
 | `noul` | Yes/no judgment | Probability (0–1) |
-| `choice` | Classify into one of several options | Chosen key |
+| `choice` | Classify into one of several options | Chosen key + per-option probabilities |
 | `score` | Position on a scale | Level value |
 
-## Output format
-
-Each example prints answers and per-call token usage, followed by a total:
+## Output example (`jev_compare.py`)
 
 ```
-=== noul example ===
-  is_refund_request: {'type': 'noul', 'noul': 0.99}
-  is_urgent: {'type': 'noul', 'noul': 0.93}
-  tokens: input=294, output=42
-
-=== total token usage ===
-  input:  294
-  output: 42
-  total:  336
+문제  정답   jev  결과  배점  confidence
+--------------------------------------------------
+  18     2     2     O     2점  100%
+  19     1     1     O     2점   95%
+  20     2     2     O     2점  100%
+--------------------------------------------------
+맞은 문제: 3  /  틀린 문제: 0  /  총 3문제
+점수: 6 / 6
 ```
